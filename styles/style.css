@@ -249,3 +249,79 @@ important match
 .sosal-link i{
     margin-right: 14px;
 }
+
+/*----------------
+ Media Queries 
+-----------------*/
+@media screen and (max-width: 700px) {
+    body{
+        width: 100%;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-detail{
+        margin-bottom: 30px;
+    }
+    .players{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .player-card{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        margin: 15px;
+    }
+    .highlight-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin: 15px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .highlight-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .highlight-banner img{
+        width: 95%;
+        height: 55%;
+        padding: 15px;
+        margin-top: 35px;
+    }
+    .club-container{
+        margin-top: 30px;
+    }
+    .clubs{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .match-link iframe{
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+}
