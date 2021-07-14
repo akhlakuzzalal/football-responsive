@@ -296,7 +296,7 @@ important match
         margin-bottom: 30px;
     }
     .header-detail h1{
-        font-size: 42px;
+        font-size: 36px;
     }
     @keyframes scale {
         0%{transform: scale(1);}
@@ -336,7 +336,7 @@ important match
         margin: 15px;
     }
     .highlight-detail h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .highlight-banner img{
         width: 95%;
@@ -348,7 +348,7 @@ important match
         margin-top: 30px;
     }
     .club-container h1{
-        font-size: 36px;
+        font-size: 30px;
     }
     .clubs{
         display: flex;
@@ -356,18 +356,20 @@ important match
         margin: 0;
     }
     .club h1{
-        font-size: 24px;
+        font-size: 20px;
     }
     .match-link iframe{
         width: 90%;
         height: 75%;
-
+    }
+    .match-container h1{
+        font-size: 30px;
     }
     .footer-container{
         width: 100%;
     }
     .footer-logo img{
-        width: 100%;
+        width: 90%;
     }
 }
 
