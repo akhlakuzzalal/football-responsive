@@ -316,7 +316,9 @@ important match
         margin: 0;
     }
     .match-link iframe{
-        width: 100%;
+        width: 90%;
+        height: 75%;
+
     }
     .footer-container{
         width: 100%;
