@@ -22,6 +22,9 @@ body{
 .navbar ul{
     display: flex;
 }
+ul p{
+    display: none;
+}
 .navbar ul li{
     list-style: none;
 }
@@ -253,7 +256,11 @@ important match
 /*----------------
  Media Queries 
 -----------------*/
-@media screen and (max-width: 700px) {
+
+/*----------------
+ Mobile Device
+---------------- */
+@media screen and (max-width: 600px) {
     body{
         width: 100%;
     }
@@ -272,6 +279,14 @@ important match
         display: flex;
         flex-direction: column;
     }
+    ul li{
+        display: none;
+    }
+    ul p{
+        display: block;
+        color: #FFFFFF;
+        font-size: 24px;
+    }
     .header{
         display: flex;
         flex-direction: column;
@@ -279,12 +294,27 @@ important match
     .header-detail{
         margin-bottom: 30px;
     }
+    @keyframes scale {
+        0%{transform: scale(1);}
+        50%{transform: scale(1.1);}
+        100%{transform: scale(1);}
+    }
+    .header-banner img{
+        animation-name: scale;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
     .players{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
         margin: 0;
     }
     .player-card{
+        display: flex;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         margin: 15px;
     }
@@ -325,5 +355,23 @@ important match
     }
     .footer-logo img{
         width: 100%;
+    }
+}
+
+/*---------------
+ Tablet Device
+---------------- */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        margin: 0;
+    }
+    .highlight-container{
+        margin: 30px 15px;
+    }
+    .clubs{
+        margin: 0 15px;
     }
 }
