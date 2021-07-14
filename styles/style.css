@@ -290,9 +290,13 @@ important match
     .header{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
     .header-detail{
         margin-bottom: 30px;
+    }
+    .header-detail h1{
+        font-size: 42px;
     }
     @keyframes scale {
         0%{transform: scale(1);}
@@ -331,6 +335,9 @@ important match
         align-items: center;
         margin: 15px;
     }
+    .highlight-detail h1{
+        font-size: 40px;
+    }
     .highlight-banner img{
         width: 95%;
         height: 55%;
@@ -340,10 +347,16 @@ important match
     .club-container{
         margin-top: 30px;
     }
+    .club-container h1{
+        font-size: 36px;
+    }
     .clubs{
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+    .club h1{
+        font-size: 24px;
     }
     .match-link iframe{
         width: 90%;
